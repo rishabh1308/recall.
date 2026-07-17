@@ -2,6 +2,20 @@
 
 Recall turns pasted notes into concise revision flashcards and a self-checking multiple-choice quiz. It uses a React/Vite frontend and a small Express API so the OpenAI key never reaches the browser.
 
+## Screenshots
+
+### Create a study set
+
+![Empty notes form and study-set placeholder](screenshots/empty-study-set.png)
+
+### Review flashcards
+
+![Generated photosynthesis revision card](screenshots/revision-cards.png)
+
+### Test yourself
+
+![Photosynthesis multiple-choice quiz](screenshots/quiz.png)
+
 ## Setup
 
 ### Prerequisites
