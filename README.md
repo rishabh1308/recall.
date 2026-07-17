@@ -4,6 +4,10 @@ Recall turns pasted notes into concise revision flashcards and a self-checking m
 
 ## Screenshots
 
+## Working recording
+
+[Watch the working project recording](https://drive.google.com/file/d/1FpSzLbx9zDPEStirYE1eJMwYnUhqIWTz/view?usp=sharing)
+
 ### Create a study set
 
 ![Empty notes form and study-set placeholder](screenshots/empty-study-set.png)
