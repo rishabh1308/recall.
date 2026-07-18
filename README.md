@@ -2,6 +2,8 @@
 
 Recall turns pasted notes into concise revision flashcards and a self-checking multiple-choice quiz. It uses a React/Vite frontend and a small Express API so the OpenAI key never reaches the browser.
 
+**Live app:** [recall-study-assistant.vercel.app](https://recall-study-assistant.vercel.app)
+
 ## Screenshots
 
 ## Working recording

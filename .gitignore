@@ -4,6 +4,7 @@ node_modules/
 # Build output and tool caches
 dist/
 .vite/
+.vercel/
 coverage/
 
 # Environment files and secrets
@@ -25,3 +26,4 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+.vercel

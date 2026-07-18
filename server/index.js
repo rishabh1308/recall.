@@ -1,6 +1,7 @@
 import 'dotenv/config';
 import cors from 'cors';
 import express from 'express';
+import { pathToFileURL } from 'node:url';
 
 const app = express();
 app.use(cors());
@@ -64,7 +65,7 @@ const studySetSchema = {
   }
 };
 
-app.post('/api/generate', async (req, res) => {
+export async function generateStudySet(req, res) {
   const notes = typeof req.body?.notes === 'string' ? req.body.notes.trim() : '';
 
   if (notes.length < 20) {
@@ -140,8 +141,12 @@ app.post('/api/generate', async (req, res) => {
   } finally {
     clearTimeout(timeout);
   }
-});
+}
 
-app.listen(3001, () => {
-  console.log('API server listening on http://localhost:3001');
-});
+app.post('/api/generate', generateStudySet);
+
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  app.listen(3001, () => {
+    console.log('API server listening on http://localhost:3001');
+  });
+}
